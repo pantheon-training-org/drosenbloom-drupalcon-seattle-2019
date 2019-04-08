@@ -1,0 +1,37 @@
+uuid: 7d76fd06-8964-4727-bd31-3f7c6f1a6eab
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.new_content_type.body
+    - field.field.node.new_content_type.field_addresssssss
+    - node.type.new_content_type
+  module:
+    - address
+    - text
+    - user
+id: node.new_content_type.default
+targetEntityType: node
+bundle: new_content_type
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_addresssssss:
+    weight: 102
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: address_default
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }
